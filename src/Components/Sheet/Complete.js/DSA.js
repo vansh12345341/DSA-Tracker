@@ -860,7 +860,7 @@ export default [
 		doneQuestions: 0,
 		questions: [
 			{
-				Url: "Uses of Linked List ( Real Life )",
+				Url: "https://www.geeksforgeeks.org/applications-of-linked-list-data-structure/",
 				Topic: "Linkedlist",
 				Difficulty: "Easy",
 				Problem: "Uses of Linked List ( Real Life )",
@@ -870,7 +870,7 @@ export default [
 				Solution: ""
 			  },
 			  {
-				Url: "Representation of Linked List",
+				Url: "https://www.geeksforgeeks.org/linked-list-set-1-introduction/",
 				Topic: "Linkedlist",
 				Difficulty: "Easy",
 				Problem: "Representation of Linked List",
@@ -890,7 +890,7 @@ export default [
 				Solution: ""
 			  },
 			  {
-				Url: "Arrays vs Linked List",
+				Url: "https://www.geeksforgeeks.org/linked-list-vs-array/",
 				Topic: "Linkedlist",
 				Difficulty: "Easy",
 				Problem: "Arrays vs Linked List",
@@ -920,7 +920,7 @@ export default [
 				Solution: ""
 			  },
 			  {
-				Url: "Doubly Linked List and STLs",
+				Url: "https://www.geeksforgeeks.org/doubly-linked-list/",
 				Topic: "Linkedlist",
 				Difficulty: "Easy",
 				Problem: "Doubly Linked List and STLs",
@@ -2204,7 +2204,7 @@ export default [
 		doneQuestions: 0,
 		questions: [
 			{
-				Url: "What is recursion ",
+				Url: "https://www.geeksforgeeks.org/recursion-in-java/",
 				Topic: "Recursion",
 				Difficulty: "Easy",
 				Problem: "What is recursion ",
@@ -2214,20 +2214,10 @@ export default [
 				Solution: ""
 			  },
 			  {
-				Url: "How Recursion Works ",
+				Url: "https://www.geeksforgeeks.org/recursion/#:~:text=A%20recursive%20function%20calls%20itself,created%20for%20each%20function%20call.",
 				Topic: "Recursion",
 				Difficulty: "Easy",
 				Problem: "How Recursion Works ",
-				Done: false,
-				Bookmark: false,
-				Notes: "",
-				Solution: ""
-			  },
-			  {
-				Url: "What is a recursion tree ",
-				Topic: "Recursion",
-				Difficulty: "Easy",
-				Problem: "What is a recursion tree ",
 				Done: false,
 				Bookmark: false,
 				Notes: "",
@@ -2394,7 +2384,7 @@ export default [
 				Solution: ""
 			  },
 			  {
-				Url: "Rat in a Maze",
+				Url: "https://www.geeksforgeeks.org/rat-in-a-maze-backtracking-2/",
 				Topic: "Recursion",
 				Difficulty: "Medium",
 				Problem: "Rat in a Maze",
@@ -2452,7 +2442,7 @@ export default [
 				Solution: ""
 			  },
 			  {
-				Url: "PRE , POST , INORDER TRAVERSALS OF BINARY TREE ",
+				Url: "https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/",
 				Topic: "Stack",
 				Difficulty: "Easy",
 				Problem: "PRE , POST , INORDER TRAVERSALS OF BINARY TREE ",
@@ -2525,7 +2515,7 @@ export default [
 				Url: "https://leetcode.com/problems/sum-of-subarray-minimums/",
 				Topic: "Stack",
 				Difficulty: "Medium",
-				Problem: "/sum-of-subarray-minimums",
+				Problem: "sum-of-subarray-minimums",
 				Done: false,
 				Bookmark: false,
 				Notes: "",
@@ -2544,7 +2534,7 @@ export default [
 		],
 	},
 	{
-		topicName: 'Two_pointer',
+		topicName: 'Two pointer',
 		position: 13,
 		started: false,
 		doneQuestions: 0,
@@ -2602,7 +2592,7 @@ export default [
 		],
 	},
 	{
-		topicName: 'Bfs',
+		topicName: 'BFS',
 		position: 14,
 		started: false,
 		doneQuestions: 0,
@@ -2690,7 +2680,7 @@ export default [
 		],
 	},
 	{
-		topicName: 'Dfs',
+		topicName: 'DFS',
 		position: 15,
 		started: false,
 		doneQuestions: 0,
@@ -3054,7 +3044,7 @@ export default [
 		],
 	},
 	{
-		topicName: 'Dynamic Programming',
+		topicName: 'DP',
 		position: 18,
 		started: false,
 		doneQuestions: 0,

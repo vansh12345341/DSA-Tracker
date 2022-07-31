@@ -21,44 +21,14 @@ const Array = () => {
           id="input-group-dropdown-1"
           className="mb-5 mt-5 me-2"
         >
-          <Dropdown.Item href="#">All</Dropdown.Item>
+          <Dropdown.Item href="/">All</Dropdown.Item>
           <Dropdown.Divider />
-          <Dropdown.Item href="#">Easy</Dropdown.Item>
-          <Dropdown.Item href="#">Medium</Dropdown.Item>
-          <Dropdown.Item href="#">Hard</Dropdown.Item>
+          <Dropdown.Item href="/">Easy</Dropdown.Item>
+          <Dropdown.Item href="/">Medium</Dropdown.Item>
+          <Dropdown.Item href="/">Hard</Dropdown.Item>
         </DropdownButton>
         <Button variant="outline-success mt-5 mb-5">Search</Button>
       </Form>
-      {/* <Table striped bordered hover variant="dark">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th></th>
-            <th colSpan={2}>Questions</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2</td>
-            <td colSpan={2}>Jacob</td>
-            <th></th>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td colSpan={2}>Jacob</td>
-            <th></th>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td colSpan={2}>Jacob</td>
-            <th></th>
-            <td>2</td>
-          </tr>
-        </tbody>
-      </Table> */}
     </Container>
   );
 };

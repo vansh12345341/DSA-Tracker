@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
-    position: relative;
+    position: fixed;
     bottom:0;
     width: 100%;
 }

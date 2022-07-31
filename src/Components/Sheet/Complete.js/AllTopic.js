@@ -3,9 +3,8 @@ import { Button, Container, Form } from "react-bootstrap";
 import Table from "react-bootstrap/Table";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
-import Records from "./DSA.js";
 
-const Array = () => {
+const AllTopic = ({ data }) => {
   return (
     <Container className="mt-5">
       <Form className="d-flex">
@@ -19,20 +18,20 @@ const Array = () => {
           aria-label="Search"
         />
         <DropdownButton
-          variant="outline-secondary"
+          variant="outlined-secondary"
           title="Category"
           id="input-group-dropdown-1"
           className="mb-5 mt-5 me-2"
         >
-          <Dropdown.Item href="#">All</Dropdown.Item>
+          <Dropdown.Item href="/">All</Dropdown.Item>
           <Dropdown.Divider />
-          <Dropdown.Item href="#">Easy</Dropdown.Item>
-          <Dropdown.Item href="#">Medium</Dropdown.Item>
-          <Dropdown.Item href="#">Hard</Dropdown.Item>
+          <Dropdown.Item href="/">Easy</Dropdown.Item>
+          <Dropdown.Item href="/">Medium</Dropdown.Item>
+          <Dropdown.Item href="/">Hard</Dropdown.Item>
         </DropdownButton>
         <Button variant="outline-success mt-5 mb-5">Search</Button>
       </Form>
-      <Table striped bordered hover variant="dark">
+      <Table striped bordered hover variant="dark mb-5">
         <thead>
           <tr>
             <th>#</th>
@@ -42,9 +41,9 @@ const Array = () => {
           </tr>
         </thead>
 
-        {Records.map((record, idx) => {
+        {data.questions.map((res, idx) => {
           return (
-            <tbody>
+            <tbody key={idx}>
               <tr>
                 <td>{idx}</td>
                 <td colSpan={2}>
@@ -52,7 +51,9 @@ const Array = () => {
                   <input type="checkbox"></input>
                 </td>
                 <th>
-                  <a href={record.URL}>{record.Problem}</a>
+                  <a target="_blank" href={res.Url} rel="noreferrer">
+                    {res.Problem}
+                  </a>
                 </th>
                 <td>2</td>
               </tr>
@@ -64,4 +65,4 @@ const Array = () => {
   );
 };
 
-export default Array;
+export default AllTopic;

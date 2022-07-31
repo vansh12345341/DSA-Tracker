@@ -19,7 +19,7 @@ function Header() {
         <Container>
           <Navbar.Brand href="/">
             <Link className="text-decoration-none text-white" to="/">
-              <img src={logo} height={35} width={100}/>
+              <img src={logo} height={35} width={100} alt="logo"/>
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle id="basic-navbar-nav" />
@@ -30,7 +30,7 @@ function Header() {
                   Home{" "}
                 </Link>
               </Nav.Link>
-              <Nav.Link className="text-white" href="/">
+              <Nav.Link className="text-white" href="/About">
                 About
               </Nav.Link>
               <NavDropdown
