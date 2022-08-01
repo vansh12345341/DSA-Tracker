@@ -7,7 +7,7 @@ import "./Complete.css";
 
 function Complete() {
   return (
-    <Container fluid className="mt-5 Home">
+    <Container className="mt-5 Home">
       <Row className="complete-back">
         <Col>
           <p
@@ -31,7 +31,7 @@ function Complete() {
                 {/* <Card.Title>{record.position}</Card.Title> */}
                 <Card.Text>
                   <Link
-                    to={`/complete/AllTopic/${record.questions[0].Topic}`}
+                    to={`/complete/${record.questions[0].Topic}`}
                     className="d-grid text-decoration-none"
                   >
                     <Button variant="dark" size="sm">

@@ -72,8 +72,8 @@ const About = () => {
             variant="outline-secondary"
             className="mt-4 mb-4 fs-1 fw-bold text-center"
           >
-            DSA Buddy is your personal web-based progress tracker based on DSA
-            Practice Sheet by Mohammad Fraz 🙏🏻
+            <Link to="/">DSA Buddy</Link> is your personal web-based progress tracker based on DSA
+            Practice Sheet by <a href="https://www.youtube.com/c/FrazMohammad">Mohammad Fraz</a> 🙏🏻
           </p>
         </Col>
       </Row>

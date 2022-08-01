@@ -30,17 +30,20 @@ function Header() {
                   Home{" "}
                 </Link>
               </Nav.Link>
-              <Nav.Link className="text-white" href="/About">
+              <Nav.Link>
+                <Link to="/About" className="text-decoration-none  text-white">
                 About
+                </Link>
               </Nav.Link>
               <NavDropdown
-                title="Sheets"
+                title={
+                  <span className="text-white">Sheets</span>
+                }
                 variant="dark"
-                // id="basic-nav-dropdown"
               >
                 <NavDropdown.Item href="/">
                   <Link
-                    className="text-decoration-none text-black "
+                    className="text-decoration-none text-black"
                     to="/beginner"
                   >
                     {" "}
