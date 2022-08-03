@@ -4,7 +4,36 @@ import Table from "react-bootstrap/Table";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 
-const AllTopic = ({ data }) => {
+const AllTopic = ({ data, update }) => {
+
+  function updateHandler(dataArray,index,pos,ques){
+    // console.log(data.position,data.questions,data.questions.Done,index);
+    update(dataArray,index,ques,pos);
+  }
+
+  let hi = [
+    {
+      Url: "https://leetcode.com/problems/two-sum/",
+      Topic: "Array",
+      Difficulty: "Easy",
+      Problem: "Two Sum",
+      Done: false,
+      Bookmark: false,
+      Notes: "",
+      Solution: "",
+    },
+    {
+      Url: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+      Topic: "Array",
+      Difficulty: "Easy",
+      Problem: "Best Time to Buy and Sell Stock",
+      Done: false,
+      Bookmark: false,
+      Notes: "",
+      Solution: "",
+    },
+  ];
+
   return (
     <Container className="mt-5">
       <Form className="d-flex">
@@ -48,7 +77,11 @@ const AllTopic = ({ data }) => {
                 <td>{idx}</td>
                 <td colSpan={2}>
                   {" "}
-                  <input type="checkbox"></input>
+                  <input
+                  name="checkAddress"
+                    type="checkbox"
+                    onClick={() => updateHandler(data,idx,data.position,data.questions)}
+                  ></input>
                 </td>
                 <th>
                   <a target="_blank" href={res.Url} rel="noreferrer">
