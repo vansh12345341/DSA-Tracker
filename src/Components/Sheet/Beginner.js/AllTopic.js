@@ -1,10 +1,30 @@
-import React from "react";
+import React , { useState , useEffect} from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import Table from "react-bootstrap/Table";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 
 const AllTopic = ({ data }) => {
+  const [checkboxState, setCheckboxState] = useState({});
+
+  useEffect(() => {
+    const storedCheckboxStates = {};
+    data.questions.forEach((_, idx) => {
+      const storedState = localStorage.getItem(`checkboxState-${idx}`);
+      if (storedState !== null) {
+        storedCheckboxStates[idx] = storedState === 'true';
+      }
+    });
+    setCheckboxState(storedCheckboxStates);
+  }, [data]);
+  
+
+  const handleCheckboxChange = (event, idx) => {
+    const isChecked = event.target.checked;
+    setCheckboxState({ ...checkboxState, [idx]: isChecked });
+    localStorage.setItem(`checkboxState-${idx}`, isChecked);
+  };
+
   return (
     <Container className="mt-5">
       <Form className="d-flex">
@@ -48,7 +68,8 @@ const AllTopic = ({ data }) => {
                 <td>{idx}</td>
                 <td colSpan={2}>
                   {" "}
-                  <input type="checkbox"></input>
+                  <input type="checkbox"    checked={checkboxState[idx] || false}
+                    onChange={(event) => handleCheckboxChange(event, idx)}></input>
                 </td>
                 <th>
                   <a target="_blank" href={res.Url} rel="noreferrer">

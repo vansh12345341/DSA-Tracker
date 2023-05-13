@@ -11,7 +11,7 @@ import Records1 from "./Components/Sheet/Beginner.js/DSA.js";
 import Beginner from "./Components/Sheet/Beginner.js/Beginner";
 import { insertComplete, insertBeginner, getData, updateDBData } from "./db.js";
 import React, { useEffect, useState } from "react";
-import { Spinner } from "react-bootstrap";
+
 
 function App() {
   const [questionData, setquestionData] = useState([]);
